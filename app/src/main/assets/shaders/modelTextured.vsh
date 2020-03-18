@@ -1,5 +1,5 @@
 /*
- *    Copyright 2016 Anand Muralidhar
+ *    Copyright 2020 Seungmo Kang
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -44,10 +44,6 @@ void main()
     // normalDotLight variable is not used for rendering any more. Please ignore this variable.
     //In the fragment shader, diffuse variable is used instead.
     //normalDotLight = max(0.1, dot(modelViewNormal, inverseLightDirection));
-    // Attenuate the light based on distance.
-    // normalDotLight variable is not used for rendering any more. Please ignore this variable.
-    //In the fragment shader, diffuse variable is used instead.
-    //normalDotLight = normalDotLight * (1.0 / (1.0 + (0.000025 * distance * distance)));
 
 /* [Calculate the specular component.] */
     vec3 inverseEyeDirection = normalize(vec3(0.0, 0.0, 1.0));
